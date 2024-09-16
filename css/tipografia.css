@@ -28,7 +28,7 @@ body {
     font-size: clamp(16px, 1.5vw, 18px);
 }
 
-h1, h2, h3 {
+h1, h3 {
     font-family: 'Merriweather', serif;
     font-weight: 700;
     line-height: 1;

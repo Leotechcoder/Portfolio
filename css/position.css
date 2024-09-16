@@ -23,7 +23,9 @@ body {
 
 .hero-content {
     width: 50%;
-    align-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 #animation{
@@ -118,7 +120,7 @@ body {
     border-radius: 15px 250px ;
     border: 2px solid var(--color-header-footer);
     position: absolute;
-    background-color: var(--color-secundario);
+    background-color: var(--color-azul-secundario);
     transition:ease-in-out;
     animation: rotate 2.5s ease-in-out;
     animation-delay: 0.8s;
@@ -134,7 +136,7 @@ body {
     border-radius: 15px 250px;
     border: 2px solid var(--color-principal);
     position: absolute;
-    background-color: var(--color-secundario);
+    background-color: var(--color-azul-secundario);
     transition:ease-in-out;
     animation: rotate 2.5s ease-in-out;
     animation-delay: 0.8s;
@@ -150,7 +152,7 @@ body {
     border-radius: 15px 250px;
     border: 2px solid var(--color-header-footer);
     position: absolute;
-    background-color: var(--color-secundario);
+    background-color: var(--color-azul-secundario);
     transition:ease-in-out;
     animation: rotate 2.5s ease-in-out;
     animation-delay: 0.8s;
@@ -166,7 +168,7 @@ body {
     border-radius: 15px 250px;
     position: absolute;
     border: 2px solid black;
-    background-color: var(--color-principal2);
+    background-color: var(--color-boton);
     transition:ease-in-out;
     animation: rotate 2.5s ease-in-out;
     animation-delay: 0.8s;
@@ -185,7 +187,7 @@ body {
     border-radius: 15px 250px;
     position: absolute;
     border: 2px solid black;
-    background-color: var(--color-principal2);
+    background-color: var(--color-boton);
     transition:ease-in-out;
     animation: rotate 2.5s ease-in-out;
     animation-delay: 0.8s;
@@ -204,7 +206,7 @@ body {
     border-radius: 15px 250px;
     position: absolute;
     border: 2px solid black;
-    background-color: var(--color-secundario);
+    background-color: var(--color-azul-secundario);
     transition:ease-in-out;
     animation: rotate 2.5s ease-in-out;
     animation-delay: 0.8s;
@@ -223,7 +225,7 @@ body {
     border-radius: 15px 250px ;
     border: 2px solid var(--color-header-footer);
     position: absolute;
-    background-color: var(--color-principal2);
+    background-color: var(--color-boton);
     transition:ease-in-out;
     animation: rotate 2.5s ease-in-out;
     animation-delay: 0.8s;
@@ -239,7 +241,7 @@ body {
     border-radius: 15px 250px;
     border: 2px solid var(--color-principal);
     position: absolute;
-    background-color: var(--color-principal2);
+    background-color: var(--color-boton);
     transition:ease-in-out;
     animation: rotate 2.5s ease-in-out;
     animation-delay: 0.8s;
@@ -255,7 +257,7 @@ body {
     border-radius: 15px 250px;
     border: 2px solid var(--color-header-footer);
     position: absolute;
-    background-color: var(--color-secundario);
+    background-color: var(--color-azul-secundario);
     transition:ease-in-out;
     animation: rotate 2.5s ease-in-out;
     animation-delay: 0.8s;
@@ -271,7 +273,7 @@ body {
     border-radius: 15px 250px;
     position: absolute;
     border: 2px solid black;
-    background-color: var(--color-secundario);
+    background-color: var(--color-azul-secundario);
     transition:ease-in-out;
     animation: rotate 2.5s ease-in-out;
     animation-delay: 0.8s;
@@ -290,7 +292,7 @@ body {
     border-radius: 15px 250px;
     position: absolute;
     border: 2px solid black;
-    background-color: var(--color-secundario);
+    background-color: var(--color-azul-secundario);
     transition:ease-in-out;
     animation: rotate 2.5s ease-in-out;
     animation-delay: 0.8s;
@@ -309,7 +311,7 @@ body {
     border-radius: 15px 250px;
     position: absolute;
     border: 2px solid black;
-    background-color: var(--color-principal2);
+    background-color: var(--color-boton);
     transition:ease-in-out;
     animation: rotate 2.5s ease-in-out;
     animation-delay: 0.8s;
@@ -327,7 +329,7 @@ body {
     height: 100px;
     border-radius: 50%;
     border: 2px solid black;
-    background-color: var(--color-secundario);
+    background-color: var(--color-azul-secundario);
     position: absolute;
     z-index: 2;
 }
@@ -338,14 +340,14 @@ body {
 .hero h1 {
     width: 100%;
     text-align: left;
-    font-size: clamp(2rem, 4vw, 4rem);
+    font-size: clamp(2rem, 3.5vw, 4rem);
     margin: 0;
     margin-left: 70px;
 }
 
 .hero p {
     text-align: left;
-    font-size: clamp(1rem, 2vw, 2rem);
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
     margin-left: 70px;
 }
 
@@ -385,8 +387,7 @@ header nav {
 header nav ul {
     display: flex;
     list-style: none;
-    padding: 0;
-    margin: 0;
+    margin-right: 30px;
 }
 
 header nav ul li {
@@ -396,7 +397,7 @@ header nav ul li {
 header nav ul li a {
     color: var(--color-fondo);
     text-decoration: none;
-    font-size: .8rem;
+    font-size: .7rem;
     transition: color 0.3s ease;
 }
 
@@ -407,77 +408,113 @@ header nav ul li a:hover {
 /*Estilos para la seccion sobre mi*/
 
 #about{
-    height: 100vh;
-    padding: 25px;
-    background-color: var(--color-secundario);
-    margin-top: 10px;
+    min-height: 400px;
+    padding: 0 100px;
+    background-color: var(--color-boton);
     align-content: center;
 }
 
 #about h2 {
-    text-align: left;
-    margin-left: 2rem;
-    margin-top: 20px;
 }
 
 #about p {
-    font-family: "Raleway", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
     text-align: left;
-    margin-left: 2rem;
-    font-size: 1.6rem;
-    line-height: 30px;
+    font-size: 1rem;
+    line-height: 1.2;
     padding-right: 20px;
 }
 
 /* Estilos para la sección de habilidades */
+.habilidades{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: var(--color-boton);
+    border: none;
+    box-shadow: none;
+}
+.estudios{
+    width: 30%;
+    list-style-position: inside;   
+}
+.estudios h2{
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.estudios ul li{
+    font-size: 0.7rem;
+}
+
  #skills {
-    height: 100vh;
-    padding: 25px;
-    background-color: var(--color-principal);
-    margin-top: 10px;
+    width: 70%;
+    height: 150px;
+    align-content: center;
+    background-color: var(--color-boton);
+}
+#skills h2{
+    font-size: 1.3rem;
+    text-align: left;
+    margin-left: 12px;
+    margin-bottom: 10px;
 }
 #skills ul {
-    list-style: none;
-    padding: 0;
+    display: flex;
 }
 
 #skills ul li {
-    width: 40%;
-    background-color: var(--color-secundario);
+    width: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-boton);
     color: var(--color-fondo);
-    padding: 0.5rem 1rem;
-    margin: 0.5rem 0;
-    border-radius: 5px;
+    font-size: .8rem;
+}
+
+#skills ul li img {
+    width: 40%;
+    margin-bottom: 3px;
+    object-fit: contain;
 }
 
 /* Estilos para los proyectos */
  #projects {
-    height: 100vh;
+    min-height: 100vh;
     padding: 25px;
     background-color: var(--color-principal);
-    margin-top: 10px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
 
 }
 .project {
-    height: 70%;
-    background-color: var(--color-secundario);    
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-principal);    
     margin-bottom: 1.5rem;
     display: flex;
-    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
 }
+
+.project-a{
+    height: 100%;
+    width: 60%;
+    background-color: var(--color-principal);
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
 .project1{
     height: 80px;
     width: 100%;
-    background-color: var(--color-secundario);
+    background-color: var(--color-principal);
     border-radius: 10px;
     text-align: center;
     align-content: center;
+    margin-top: 15px;
 }
 
 .project h3 a {
@@ -489,41 +526,119 @@ header nav ul li a:hover {
     color: var(--color-hover);
 }
 
+/*Article´s*/
+
 article{
-    width: 250px;
-    height: 300px;
-    margin: 0 auto;
-    padding: 1rem;
-    background-color: transparent;    
-    border-radius: 5px;
+    width: 220px;
+    height: auto;
+    background-color: var(--color-boton);    
+    border-radius: 15px;
     border: 1px solid var(--color-principal2);
+    display: flex;
+    flex-direction: column;
 }
+
+.imgart{
+    width: 100%;
+    height: 60%
+}
+
+.textart{
+    padding: 15px;
+    width: 100%;
+    height: 40%;
+}
+
+article h3{
+    margin: 0;
+    margin-top: 15px;
+    color: var(--color-azul-secundario);
+    font-size: 1.1rem;
+}
+article p{
+    font-size: .8rem;
+    margin: 8px 0;
+}
+/*Imagenes article*/
 #img1{
     width: 100%;
-    background-image: url(/imagenes/banana-leaf-8489887_1280.jpg);
-    background-size: cover;
+    height: 150px;
+    background-image: url(/imagenes/portfolio.png);
+    background-size:cover;
     background-position: center;
-    border-radius: 10px;
-    transition: background-color 0.5s ease;
-    object-fit: contain;
+    border-radius: 10px 10px 0 0;
 }
 #img2{
     width: 100%;
-    background-image: url(/imagenes/stream-8482939_1280.jpg);
+    height: 150px;
+    background-image: url(/imagenes/Control\ Stock.png);
     background-size: cover;
     background-position: center;
-    border-radius: 10px;
-    transition: background-color 0.5s ease;
+    border-radius: 10px 10px 0 0;
     
 }
 
 #img3{
     width: 100%;
-    background-image: url(/imagenes/the-season-of-ripe-rice-7279448_1280.jpg);
+    height: 150px;
+    background-image: url(/imagenes/Growshop.png);
     background-size: cover;
     background-position: center;
-    border-radius: 10px;
-    transition: background-color 0.5s ease;
+    border-radius: 10px 10px 0 0;
+}
+
+/*Botones article*/
+
+#btnart{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 15px;
+}
+
+#btnart1{
+    width: 70px;
+    height: 30px;
+    
+    background-color: transparent;
+    color: var(--color-fondo);
+    border: 1px solid var(--color-azul-secundario);
+    border-radius: 8px;
+}
+#btnart2{
+    width: 70px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-azul-secundario);
+    color: var(--color-fondo);
+    border: 1px solid var(--color-azul-secundario);
+    border-radius: 8px;
+}
+
+#btnart img{
+    width: 23px;
+    height: 23px;
+    background-color: var(--color-azul-secundario);
+    border-radius: 50%;
+    object-fit: contain;
+}
+#btnart1 a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 0 15px;
+    color: var(--color-azul-secundario);
+    text-decoration: none;
+}
+
+#btnart2 a{
+    text-decoration: none;
+    color: var(--color-fondo);
 }
 
 #carousel {
@@ -534,34 +649,41 @@ article{
 }
 
 .carousel-container {
-    display: flex;
+    height: 100%;
+    /* display: flex; */
     width: 100%; /* 100% x número de slides */
-    animation: slide 12s infinite;
+    /* animation: slide 12s infinite; */
 }
 
 .carousel-slides {
+    height: 100%;
     display: flex;
     width: 100%;
 }
 
 .slide {
     flex: 1;
-    min-width: 100%;
+    width: 100%;
+    height: 100%;
     transition: opacity 1s ease-in-out;
+    background-image: url("/imagenes/valle-de-la-luna-general-roca.jpg");
+    background-position: top;
+    background-size:cover;
+    opacity: 0.9;
 }
 
-.slide img {
+/* .slide img {
     width: 100%;
     height: auto;
-}
+} */
 
 /* Animación para el carrusel */
-@keyframes slide {
+/* @keyframes slide {
     0% { transform: translateX(0%); }
     33.33% { transform: translateX(-100%); }
     66.66% { transform: translateX(-200%); }
     100% { transform: translateX(0%); }
-}
+} */
 
 /* Estilos para el formulario de contacto
 form {
@@ -594,8 +716,8 @@ form button:hover {
 } */
 
 footer {
-    background-color: var(--color-header-footer);
-    color: var(--color-fondo);
+    background-color: var(--color-principal);
+    color: var(--color-azul-secundario);
     padding: 1rem 2rem;
     text-align: center;
     position: relative;
@@ -612,21 +734,28 @@ footer {
 
 .social-links {
     width: 100%;
-    margin-top: 1rem;
+    margin: 1rem 0;
 }
 
 .social-links a {
+    color: var(--color-enlace);
     margin: 0 0.5rem;
     display: inline-block;
 }
 
 .social-links img {
-    width: 24px;
-    height: 24px;
+    width: 30px;
+    height: 30px;
+    opacity: 0.6;
     transition: opacity 0.3s ease;
+}
+.github{
+    background-color: var(--color-azul-secundario);
+    border-radius: 50%;
 }
 
 .social-links a:hover img {
+    color: var(--color-azul-secundario);
     opacity: 0.8;
 }
 
@@ -642,15 +771,19 @@ footer {
 #button1{
     width: 100px;
     height: 30px;
+    font-size: 0.7rem;
     background-color: transparent;
-    border: 1px solid var(--color-boton);
-    color: var(--color-texto);
+    border: 1px solid var(--color-azul-secundario);
+    color: var(--color-fondo);
+    border-radius: 8px;
 }
 #button2{
     width: 100px;
     height: 30px;
-    background-color: var(--color-secundario);
+    font-size: 0.7rem;
+    background-color: var(--color-azul-secundario);
     border: 1px solid var(--color-secundario);
     color: var(--color-fondo);
+    border-radius: 8px;
 }
 
