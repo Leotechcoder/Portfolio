@@ -1,0 +1,70 @@
+:root {
+    /* Colores principales */
+    --color-fondo: #E9F1FA; /* Gris claro para el fondo */
+    --color-texto: #ced6df; /* Negro suave para el texto principal */
+    --color-principal: #0A1828; /*#ac675a*/
+    --color-principal2: #137470; /* Azul oscuro para acentos principales */
+    --color-secundario: #003366; /* Marrón para secciones */
+    --color-hover: #9885db; /* Mostaza para los estados hover */
+    --color-header-footer: rgb(26, 26, 26, 0.4); /* Negro para header y footer */
+    --color-enlace: #003366; /* Azul oscuro para enlaces */
+    --color-enlace-hover: #6b94ec; /* Mostaza para hover en enlaces */
+    --color-sombra: rgba(44, 30, 30, 0.3); /* Sombra suave */
+    --color-boton:#01257D;
+}
+
+/* Estilos generales */
+body {
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+}
+
+a {
+    color: var(--color-enlace);
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--color-enlace-hover);
+}
+
+/* Estilos para el header */
+header {
+    background-color: var(--color-header-footer);
+    color: var(--color-fondo);
+}
+
+/* Estilos para la navegación */
+header nav ul li a {
+    color: var(--color-fondo);
+}
+
+header nav ul li a:hover {
+    color: var(--color-hover);
+}
+
+.hero-content h1{
+    color: var(--color-enlace);
+
+}
+.hero-content p{
+    color: var(--color-texto);
+}
+/* Estilos para las secciones */
+section {
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    box-shadow: 0 0 10px var(--color-sombra);
+    border-left: 5px solid var(--color-principal); /* Lateral acentuado con color principal */
+    border-radius: 8px;
+}
+
+/* Estilos para el formulario */
+form button {
+    background-color: var(--color-principal);
+    color: var(--color-fondo);
+}
+
+form button:hover {
+    background-color: var(--color-hover);
+}

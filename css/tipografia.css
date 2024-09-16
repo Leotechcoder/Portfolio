@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Definir una fuente personalizada */
+@font-face {
+    font-family: 'CustomFont';
+    src: url('fonts/CustomFont-Regular.woff2') format('woff2'),
+         url('fonts/CustomFont-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CustomFont';
+    src: url('fonts/CustomFont-Bold.woff2') format('woff2'),
+         url('fonts/CustomFont-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Aplicar las fuentes */
+body {
+    font-family: 'Lato', 'CustomFont', sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+    font-size: clamp(16px, 1.5vw, 18px);
+}
+
+h1, h2, h3 {
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 20px;
+    color: #161616;
+}
+h2, h3{
+    font-weight: 300;
+    font-size: 1.5em;
+    color: var(--color-texto);
+}
+
+h1{
+    font-family: "Nerko One", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3.2em;    
+}
+p {
+    font-family: 'Lato', 'CustomFont', sans-serif;
+    font-weight: 400;
+    line-height: 1;
+}
+
+nav ul li a {
+    font-family: 'Lato', 'CustomFont', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--color-fondo);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.project h3 a {
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    font-size: clamp(18px, 1.5vw, 22px);
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+footer p {
+    font-family: 'Lato', 'CustomFont', sans-serif;
+    font-weight: 400;
+    font-size: clamp(12px, 1vw, 14px);
+    color: #fff;
+    margin: 10px 0;
+}
