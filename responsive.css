@@ -1,0 +1,88 @@
+@import url(css/colores.css);
+@import url(css/tipografia.css);
+@import url(css/position.css);
+
+
+@media (max-width: 950px) {
+    #about{    
+    padding: 10px 50px;    
+    }
+    #about p {
+        font-size: .9rem;
+        line-height: 1;
+        padding-right: 10px;
+    }
+    .habilidades{
+        gap: 20px;
+    }
+    .estudios{
+        width: 50%;
+    }
+    .estudios h2{
+        font-size: 1rem;
+        margin-bottom: 5px;
+    }
+    #skills {
+        width: 50%;
+    }
+    
+    #skills ul li {
+        flex-wrap: wrap;
+        font-size: .7rem;
+    }
+}
+
+@media (max-width: 730px) {
+    #about{    
+        padding: 30px 40px;    
+        }
+    .habilidades{
+        flex-wrap: wrap;
+    }
+    .estudios{
+        width: 100%;
+    }
+    .estudios ul li {
+        font-size: 0.8rem;
+    }
+    #skills {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    #skills h2{
+        font-size: 1rem;
+        margin-left: 7px;
+    }
+    #skills ul li {
+        max-width: 15%;
+    }
+}
+
+@media (max-width: 550px) {
+    #about{    
+        padding: 30px 40px;    
+        }
+    .estudios ul li{
+        font-size: 0.7rem;
+    }
+    #about>h2{
+        font-size: 1.2rem;
+    }
+    #skills ul{
+        flex-wrap: wrap;
+    }
+    #skills ul li {
+        max-width: 25%;
+}
+
+@media (max-width: 360px) {
+    #about{    
+        padding: 25px;    
+        }
+    
+}
+
+/* Estilos para la sección de habilidades */
+
+
+
