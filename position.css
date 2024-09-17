@@ -1,5 +1,5 @@
-@import url(/css/colores.css);
-@import url(/css/tipografia.css);
+@import url(css/colores.css);
+@import url(css/tipografia.css);
 
 
 *{
@@ -416,9 +416,6 @@ header nav ul li a:hover {
     padding: 0 100px;
     background-color: var(--color-boton);
     align-content: center;
-}
-
-#about h2 {
 }
 
 #about p {
