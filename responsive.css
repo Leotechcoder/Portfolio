@@ -73,6 +73,7 @@
     }
     #skills ul li {
         max-width: 25%;
+    }
 }
 
 @media (max-width: 360px) {
