@@ -12,346 +12,6 @@ body {
     box-sizing: border-box;
 }
 
-
-/* Estilos para la sección hero */
-.hero {
-    background-color: var(--color-principal);
-    color: var(--color-fondo);
-    height: 100vh;
-    display: flex;
-    
-}
-
-.hero-content {
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
-
-#animation{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50%;
-}
-#animation-a{
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    background-color: transparent;
-    animation: rotate 2s ease-in;
-    animation-delay: 0.8s;
-    animation-timing-function:ease-in-out;
-    animation-iteration-count:initial;
-    animation-direction:normal;
-    animation-fill-mode:both;
-}
-#rotate1{
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    background-color: transparent;
-    transform: rotate(0deg);
-    position: absolute;
-}
-
-#rotate2{
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    background-color: transparent;
-    transform: rotate(90deg);
-    position: absolute;
-    z-index: 1;
-}
-#animation_a{
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    background-color: transparent;
-    transform: rotate(0deg);
-    position: absolute;
-}
-#animation_b{
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    background-color: transparent;
-    transform: rotate(30deg);
-    position: absolute;
-}
-#animation_c{
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    background-color: transparent;
-    transform: rotate(60deg);
-    position: absolute;
-}
-#animation_d{
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    background-color: transparent;
-    transform: rotate(0deg);
-    position: absolute;
-}
-#animation_e{
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    background-color: var(--color-header-footer);
-    transform: rotate(30deg);
-    position: absolute;
-}
-#animation_f{
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    background-color: transparent;
-    animation-delay: 0.8s;
-    transform: rotate(60deg);
-    position: absolute;
-}
-
-#rotate1 #animation-b{
-    width: 150px;
-    height: 150px;
-    border-radius: 15px 250px ;
-    border: 2px solid var(--color-header-footer);
-    position: absolute;
-    background-color: var(--color-azul-secundario);
-    transition:ease-in-out;
-    animation: rotate 2.5s ease-in-out;
-    animation-delay: 0.8s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count:initial;
-    animation-direction:normal;
-    animation-fill-mode:both;
-    transform: rotate(0deg);    
-}
-#rotate1 #animation-c{
-    width: 150px;
-    height: 150px;
-    border-radius: 15px 250px;
-    border: 2px solid var(--color-principal);
-    position: absolute;
-    background-color: var(--color-azul-secundario);
-    transition:ease-in-out;
-    animation: rotate 2.5s ease-in-out;
-    animation-delay: 0.8s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count:initial;
-    animation-direction:normal;
-    animation-fill-mode:both;
-    transform: rotate(15deg); 
-}
-#rotate1 #animation-d{
-    width: 150px;
-    height: 150px;
-    border-radius: 15px 250px;
-    border: 2px solid var(--color-header-footer);
-    position: absolute;
-    background-color: var(--color-azul-secundario);
-    transition:ease-in-out;
-    animation: rotate 2.5s ease-in-out;
-    animation-delay: 0.8s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count:initial;
-    animation-direction:normal;
-    animation-fill-mode:both;
-    transform: rotate(30deg); 
-}
-#rotate1 #animation-e{
-    width: 150px;
-    height: 150px;
-    border-radius: 15px 250px;
-    position: absolute;
-    border: 2px solid black;
-    background-color: var(--color-boton);
-    transition:ease-in-out;
-    animation: rotate 2.5s ease-in-out;
-    animation-delay: 0.8s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count:initial;
-    animation-direction:normal;
-    animation-fill-mode:both;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: rotate(45deg); 
-}
-#rotate1 #animation-f{
-    width: 150px;
-    height: 150px;
-    border-radius: 15px 250px;
-    position: absolute;
-    border: 2px solid black;
-    background-color: var(--color-boton);
-    transition:ease-in-out;
-    animation: rotate 2.5s ease-in-out;
-    animation-delay: 0.8s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count:initial;
-    animation-direction:normal;
-    animation-fill-mode:both;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: rotate(60deg); 
-}
-#rotate1 #animation-g{
-    width: 150px;
-    height: 150px;
-    border-radius: 15px 250px;
-    position: absolute;
-    border: 2px solid black;
-    background-color: var(--color-azul-secundario);
-    transition:ease-in-out;
-    animation: rotate 2.5s ease-in-out;
-    animation-delay: 0.8s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count:initial;
-    animation-direction:normal;
-    animation-fill-mode:both;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: rotate(75deg); 
-}
-#rotate2 #animation-b{
-    width: 150px;
-    height: 150px;
-    border-radius: 15px 250px ;
-    border: 2px solid var(--color-header-footer);
-    position: absolute;
-    background-color: var(--color-boton);
-    transition:ease-in-out;
-    animation: rotate 2.5s ease-in-out;
-    animation-delay: 0.8s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count:initial;
-    animation-direction:normal;
-    animation-fill-mode:both;
-    transform: rotate(90deg);    
-}
-#rotate2 #animation-c{
-    width: 150px;
-    height: 150px;
-    border-radius: 15px 250px;
-    border: 2px solid var(--color-principal);
-    position: absolute;
-    background-color: var(--color-boton);
-    transition:ease-in-out;
-    animation: rotate 2.5s ease-in-out;
-    animation-delay: 0.8s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count:initial;
-    animation-direction:normal;
-    animation-fill-mode:both;
-    transform: rotate(105deg); 
-}
-#rotate2 #animation-d{
-    width: 150px;
-    height: 150px;
-    border-radius: 15px 250px;
-    border: 2px solid var(--color-header-footer);
-    position: absolute;
-    background-color: var(--color-azul-secundario);
-    transition:ease-in-out;
-    animation: rotate 2.5s ease-in-out;
-    animation-delay: 0.8s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count:initial;
-    animation-direction:normal;
-    animation-fill-mode:both;
-    transform: rotate(120deg); 
-}
-#rotate2 #animation-e{
-    width: 150px;
-    height: 150px;
-    border-radius: 15px 250px;
-    position: absolute;
-    border: 2px solid black;
-    background-color: var(--color-azul-secundario);
-    transition:ease-in-out;
-    animation: rotate 2.5s ease-in-out;
-    animation-delay: 0.8s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count:initial;
-    animation-direction:normal;
-    animation-fill-mode:both;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: rotate(135deg); 
-}
-#rotate2 #animation-f{
-    width: 150px;
-    height: 150px;
-    border-radius: 15px 250px;
-    position: absolute;
-    border: 2px solid black;
-    background-color: var(--color-azul-secundario);
-    transition:ease-in-out;
-    animation: rotate 2.5s ease-in-out;
-    animation-delay: 0.8s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count:initial;
-    animation-direction:normal;
-    animation-fill-mode:both;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: rotate(150deg); 
-}
-#rotate2 #animation-g{
-    width: 150px;
-    height: 150px;
-    border-radius: 15px 250px;
-    position: absolute;
-    border: 2px solid black;
-    background-color: var(--color-boton);
-    transition:ease-in-out;
-    animation: rotate 2.5s ease-in-out;
-    animation-delay: 0.8s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count:initial;
-    animation-direction:normal;
-    animation-fill-mode:both;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: rotate(165deg); 
-}
-#centro{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    border: 2px solid black;
-    background-color: var(--color-azul-secundario);
-    position: absolute;
-    z-index: 2;
-}
-@keyframes rotate {
-    0% { transform: rotate(0deg) scale(0); }
-    100% { transform: rotate(45deg) scale(1.1); }
-}
-.hero h1 {
-    width: 100%;
-    text-align: left;
-    font-size: clamp(2rem, 3.5vw, 4rem);
-    margin: 0;
-    margin-left: 70px;
-}
-
-.hero p {
-    text-align: left;
-    font-size: clamp(1rem, 1.5vw, 1.5rem);
-    margin-left: 70px;
-}
-
 /* Estilos para el header */
 header {
     display: flex;
@@ -405,6 +65,350 @@ header nav ul li a {
 header nav ul li a:hover {
     color: var(--color-hover);
 }
+header nav ul li :hover{
+    border: 1px solid var(--color-azul-secundario);
+}
+
+
+/* Estilos para la sección hero */
+.hero {
+    background-color: var(--color-principal);
+    color: var(--color-fondo);
+    height: 100vh;
+    display: flex;
+    
+}
+
+.hero-content {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#animation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+#animation-a{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: transparent;
+    animation: rotate 2s ease-in;
+    animation-delay: 0.8s;
+    animation-timing-function:ease-in-out;
+    animation-iteration-count:initial;
+    animation-direction:normal;
+    animation-fill-mode:both;
+}
+#rotate1{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: transparent;
+    transform: rotate(0deg);
+    position: absolute;
+}
+
+#rotate2{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: transparent;
+    transform: rotate(90deg);
+    position: absolute;
+    z-index: 1;
+}
+#animation_a{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: transparent;
+    transform: rotate(0deg);
+    position: absolute;
+}
+#animation_b{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: transparent;
+    transform: rotate(30deg);
+    position: absolute;
+}
+#animation_c{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: transparent;
+    transform: rotate(60deg);
+    position: absolute;
+}
+#animation_d{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: transparent;
+    transform: rotate(0deg);
+    position: absolute;
+}
+#animation_e{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: var(--color-header-footer);
+    transform: rotate(30deg);
+    position: absolute;
+}
+#animation_f{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: transparent;
+    animation-delay: 0.8s;
+    transform: rotate(60deg);
+    position: absolute;
+}
+
+#rotate1 #animation-b{
+    width: 120px;
+    height: 120px;
+    border-radius: 15px 250px ;
+    border: 2px solid var(--color-header-footer);
+    position: absolute;
+    background-color: var(--color-azul-secundario);
+    transition:ease-in-out;
+    animation: rotate 2.5s ease-in-out;
+    animation-delay: 0.8s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count:initial;
+    animation-direction:normal;
+    animation-fill-mode:both;
+    transform: rotate(0deg);    
+}
+#rotate1 #animation-c{
+    width: 120px;
+    height: 120px;
+    border-radius: 15px 250px;
+    border: 2px solid var(--color-principal);
+    position: absolute;
+    background-color: var(--color-azul-secundario);
+    transition:ease-in-out;
+    animation: rotate 2.5s ease-in-out;
+    animation-delay: 0.8s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count:initial;
+    animation-direction:normal;
+    animation-fill-mode:both;
+    transform: rotate(15deg); 
+}
+#rotate1 #animation-d{
+    width: 120px;
+    height: 120px;
+    border-radius: 15px 250px;
+    border: 2px solid var(--color-header-footer);
+    position: absolute;
+    background-color: var(--color-azul-secundario);
+    transition:ease-in-out;
+    animation: rotate 2.5s ease-in-out;
+    animation-delay: 0.8s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count:initial;
+    animation-direction:normal;
+    animation-fill-mode:both;
+    transform: rotate(30deg); 
+}
+#rotate1 #animation-e{
+    width: 120px;
+    height: 120px;
+    border-radius: 15px 250px;
+    position: absolute;
+    border: 2px solid black;
+    background-color: var(--color-boton);
+    transition:ease-in-out;
+    animation: rotate 2.5s ease-in-out;
+    animation-delay: 0.8s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count:initial;
+    animation-direction:normal;
+    animation-fill-mode:both;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(45deg); 
+}
+#rotate1 #animation-f{
+    width: 120px;
+    height: 120px;
+    border-radius: 15px 250px;
+    position: absolute;
+    border: 2px solid black;
+    background-color: var(--color-boton);
+    transition:ease-in-out;
+    animation: rotate 2.5s ease-in-out;
+    animation-delay: 0.8s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count:initial;
+    animation-direction:normal;
+    animation-fill-mode:both;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(60deg); 
+}
+#rotate1 #animation-g{
+    width: 120px;
+    height: 120px;
+    border-radius: 15px 250px;
+    position: absolute;
+    border: 2px solid black;
+    background-color: var(--color-azul-secundario);
+    transition:ease-in-out;
+    animation: rotate 2.5s ease-in-out;
+    animation-delay: 0.8s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count:initial;
+    animation-direction:normal;
+    animation-fill-mode:both;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(75deg); 
+}
+#rotate2 #animation-b{
+    width: 120px;
+    height: 120px;
+    border-radius: 15px 250px ;
+    border: 2px solid var(--color-header-footer);
+    position: absolute;
+    background-color: var(--color-boton);
+    transition:ease-in-out;
+    animation: rotate 2.5s ease-in-out;
+    animation-delay: 0.8s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count:initial;
+    animation-direction:normal;
+    animation-fill-mode:both;
+    transform: rotate(90deg);    
+}
+#rotate2 #animation-c{
+    width: 120px;
+    height: 120px;
+    border-radius: 15px 250px;
+    border: 2px solid var(--color-principal);
+    position: absolute;
+    background-color: var(--color-boton);
+    transition:ease-in-out;
+    animation: rotate 2.5s ease-in-out;
+    animation-delay: 0.8s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count:initial;
+    animation-direction:normal;
+    animation-fill-mode:both;
+    transform: rotate(105deg); 
+}
+#rotate2 #animation-d{
+    width: 120px;
+    height: 120px;
+    border-radius: 15px 250px;
+    border: 2px solid var(--color-header-footer);
+    position: absolute;
+    background-color: var(--color-azul-secundario);
+    transition:ease-in-out;
+    animation: rotate 2.5s ease-in-out;
+    animation-delay: 0.8s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count:initial;
+    animation-direction:normal;
+    animation-fill-mode:both;
+    transform: rotate(120deg); 
+}
+#rotate2 #animation-e{
+    width: 120px;
+    height: 120px;
+    border-radius: 15px 250px;
+    position: absolute;
+    border: 2px solid black;
+    background-color: var(--color-azul-secundario);
+    transition:ease-in-out;
+    animation: rotate 2.5s ease-in-out;
+    animation-delay: 0.8s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count:initial;
+    animation-direction:normal;
+    animation-fill-mode:both;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(135deg); 
+}
+#rotate2 #animation-f{
+    width: 120px;
+    height: 120px;
+    border-radius: 15px 250px;
+    position: absolute;
+    border: 2px solid black;
+    background-color: var(--color-azul-secundario);
+    transition:ease-in-out;
+    animation: rotate 2.5s ease-in-out;
+    animation-delay: 0.8s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count:initial;
+    animation-direction:normal;
+    animation-fill-mode:both;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(150deg); 
+}
+#rotate2 #animation-g{
+    width: 120px;
+    height: 120px;
+    border-radius: 15px 250px;
+    position: absolute;
+    border: 2px solid black;
+    background-color: var(--color-boton);
+    transition:ease-in-out;
+    animation: rotate 2.5s ease-in-out;
+    animation-delay: 0.8s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count:initial;
+    animation-direction:normal;
+    animation-fill-mode:both;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(165deg); 
+}
+#centro{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 2px solid black;
+    background-color: var(--color-azul-secundario);
+    position: absolute;
+    z-index: 2;
+}
+@keyframes rotate {
+    0% { transform: rotate(0deg) scale(0); }
+    100% { transform: rotate(45deg) scale(1); }
+}
+.hero h1 {
+    width: 100%;
+    text-align: left;
+    font-size: clamp(1.5rem, 3.5vw, 4rem);
+    margin: 0;
+    margin-left: 70px;
+}
+
+.hero p {
+    text-align: left;
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
+    margin-left: 70px;
+}
+
 
 /*Estilos para la seccion sobre mi*/
 

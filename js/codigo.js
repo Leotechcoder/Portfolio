@@ -1,9 +1,7 @@
-// JavaScript para añadir la clase 'scrolled' al header cuando se hace scroll
-window.addEventListener('scroll', () => {
-    const header = document.querySelector('header');
-    if (window.scrollY > 30) { // Ajusta este valor según el punto en el que deseas que el header cambie
-        header.classList.add('scrolled');
-    } else {
-        header.classList.remove('scrolled');
-    }
+
+// JavaScript para animar #animation y que a medida que la pantalla va reduciendo su tamaño tmbn #animation
+
+window.addEventListener('resize', () => {
+    const animation = document.querySelector('#animation');
+    animation.style.transform = `scale(${window.innerWidth / 1200})`;
 });
