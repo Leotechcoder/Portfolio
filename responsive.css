@@ -32,19 +32,9 @@
     }
 }
 
-@media (max-width: 730px) {
-    .hero-content{
-        width: 100%;
-        justify-content: flex-start;
-    }
-    .div-hero{
-        width: 100%;
-    }
-    #animation{
-        display: none;
-    }
+@media (max-width: 780px) {
     #about{    
-        padding: 30px 40px;    
+        padding: 60px 80px 10px;    
         }
     .habilidades{
         flex-wrap: wrap;
@@ -66,18 +56,29 @@
     #skills ul li {
         max-width: 15%;
     }
+    .project-a{
+        width: 62%;
+    }
 }
 
 @media (max-width: 550px) {
-    header{
-        display: none;
+    header, nav, header nav ul{
+        display: block;
     }
+    header{
+        margin-top: 5px;
+        height: auto;
+    }
+    
     .hero-content{
+        width: 100%;
         justify-content: center;
     }
+    
     .div-hero>h1, .div-hero>p, #boton{
         margin-left: 0;
     }
+    
     #animation{
         display: none;
     }

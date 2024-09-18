@@ -47,6 +47,9 @@ h1{
     font-style: normal;
     font-size: 3.2em;    
 }
+.div-hero>h1{    
+    font-size: clamp(2rem, 3.5vw, 4rem);
+}
 p {
     font-family: 'Lato', 'CustomFont', sans-serif;
     font-weight: 400;
