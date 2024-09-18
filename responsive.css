@@ -62,12 +62,25 @@
 }
 
 @media (max-width: 550px) {
-    header, nav, header nav ul{
-        display: block;
+
+    header nav ul{
+        display: flex;
+        flex-direction: column;
+    }
+    header nav ul li{
+        margin: 5px 0px;
     }
     header{
-        margin-top: 5px;
-        height: auto;
+        height: 100px;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .nav{
+        display: block;
+        width: 100%;
+        position: relative;
+        top: 83px;
+        left: 20px;
     }
     
     .hero-content{
