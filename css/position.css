@@ -566,16 +566,18 @@ article p{
 #img1{
     width: 100%;
     height: 150px;
-    background-image: url("imagenes/portfolio.png");
-    background-size:cover;
+    background-image: url("../imagenes/portfolio.jpg");
+    background-size:contain;
+    background-repeat: no-repeat;
     background-position: center;
     border-radius: 10px 10px 0 0;
 }
 #img2{
     width: 100%;
     height: 150px;
-    background-image: url("imagenes/Control\ Stock.png");
-    background-size: cover;
+    background-image: url("../imagenes/App-Potter.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
     background-position: center;
     border-radius: 10px 10px 0 0;
     
@@ -584,8 +586,9 @@ article p{
 #img3{
     width: 100%;
     height: 150px;
-    background-image: url("imagenes/Growshop.png");
-    background-size: cover;
+    background-image: url("../imagenes/pizza-steve.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
     background-position: center;
     border-radius: 10px 10px 0 0;
 }
@@ -669,8 +672,8 @@ article p{
     width: 100%;
     height: 100%;
     transition: opacity 1s ease-in-out;
-    background-image: url("imagenes/valle-de-la-luna-general-roca.jpg");
-    background-position: top;
+    background-image: url("../imagenes/valle-de-la-luna-general-roca.jpg");
+    background-position: center;
     background-size:cover;
     opacity: 0.9;
 }

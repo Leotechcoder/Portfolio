@@ -27,5 +27,5 @@ btnNav.style.display = 'none';
     
 
 btnNav.addEventListener("click", () => {
-    document.querySelector("#nav").style.display = nav.style.display === "none" ? "block" : "none";
+    document.querySelector("#nav").style.display = document.querySelector("#nav").style.display === "none" ? "block" : "none";
 });
